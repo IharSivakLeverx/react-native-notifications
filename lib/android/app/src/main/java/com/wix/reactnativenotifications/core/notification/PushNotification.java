@@ -151,6 +151,7 @@ public class PushNotification implements IPushNotification {
                 .setContentText(mNotificationProps.getBody())
                 .setContentIntent(intent)
                 .setDefaults(Notification.DEFAULT_ALL)
+                .setNumber(mNotificationProps.getBadge())
                 .setAutoCancel(true);
 
 
