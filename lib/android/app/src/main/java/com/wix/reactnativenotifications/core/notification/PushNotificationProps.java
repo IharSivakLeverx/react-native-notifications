@@ -11,11 +11,15 @@ public class PushNotificationProps {
     }
 
     public String getTitle() {
-        return mBundle.getString("title");
+        return mBundle.getString("title", "Scorebox");
     }
 
     public String getBody() {
-        return mBundle.getString("body");
+        return mBundle.getString("twi_body");
+    }
+    
+    public Integer getBadge() {
+        return mBundle.getInt("badge", 1);
     }
 
     public Bundle asBundle() {
